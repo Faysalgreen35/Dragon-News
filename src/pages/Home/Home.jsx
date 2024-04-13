@@ -5,6 +5,7 @@ import Header from "../Shared/navbar/Header/Header";
 import Navbar from "../Shared/navbar/Navbar";
 import BreakingNews from "./BreakingNews";
 import NewsCard from "./NewsCard";
+import { Helmet } from "react-helmet";
 
 
 const Home = () => {
@@ -13,6 +14,9 @@ const Home = () => {
 
     return (
         <div className="mx-auto max-w-6xl">
+            <Helmet>
+            <title>Dragon News | Home</title>
+            </Helmet>
             <Header></Header>
             <BreakingNews></BreakingNews>
             <Navbar></Navbar>

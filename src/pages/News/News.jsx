@@ -9,7 +9,7 @@ const News = () => {
     // console.log('news of ', news)
     const { id } = useParams();
 
-    const intNewsId = parseInt(id);
+    // const intNewsId = parseInt(id);
     // console.log('news intNewsId of ', intNewsId)
 
     const signlenews = news.find(signlenews => signlenews.id === id);

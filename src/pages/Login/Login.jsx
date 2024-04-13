@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Shared/navbar/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import { Helmet } from "react-helmet";
 
 
 
@@ -33,6 +34,9 @@ const Login = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Login Page</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col ">
